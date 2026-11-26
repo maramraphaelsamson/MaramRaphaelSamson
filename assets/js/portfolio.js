@@ -6,6 +6,12 @@
 
   if (year) year.textContent = String(new Date().getFullYear());
 
+  // Keep the career goal broad: full-stack ability matters, but the role need not be full-stack.
+  const careerGoal = document.querySelector('#about .about-copy p:last-of-type');
+  if (careerGoal) {
+    careerGoal.textContent = 'I’m looking for an opportunity where I can contribute my full-stack skills, work collaboratively with a team, and keep learning and growing alongside others.';
+  }
+
   if (menuButton && nav) {
     menuButton.addEventListener('click', function () {
       const isOpen = menuButton.getAttribute('aria-expanded') === 'true';

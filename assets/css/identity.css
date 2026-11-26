@@ -1,0 +1,30 @@
+/* Identity and name emphasis overrides */
+.hero-copy h1 {
+  max-width: 13ch;
+  font-size: clamp(3.35rem, 6vw, 5.55rem);
+  font-weight: 800;
+  letter-spacing: -.075em;
+  line-height: .99;
+}
+.hero-copy h1 .name-last { color: #f8fafc; }
+.hero-tagline {
+  margin: 1.15rem 0 0;
+  color: #e4edf1;
+  font-family: var(--display-font);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 750;
+  letter-spacing: -.045em;
+  line-height: 1.35;
+}
+.hero-description { margin-top: .8rem; }
+.site-nav .wordmark { font-size: .88rem; }
+.site-footer .wordmark { font-size: .8rem; }
+.about-copy .about-lead { max-width: 38rem; }
+@media (max-width: 850px) {
+  .hero-copy h1 { font-size: clamp(3rem, 7.3vw, 4.8rem); }
+}
+@media (max-width: 600px) {
+  .site-nav .wordmark { font-size: .77rem; }
+  .hero-copy h1 { font-size: clamp(3.15rem, 12.2vw, 4.5rem); }
+  .hero-tagline { font-size: 1.28rem; }
+}
